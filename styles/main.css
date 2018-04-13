@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fafafa;
+  font-family: "Opens Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 700;
+}
+.container {
+  max-width: 50%;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  margin: 100px auto;
+}
+.container div {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.7s ease-in-out;
+}
+.container div h1 {
+  opacity: 0;
+  font-size: 0px;
+}
+.container div:nth-child(odd) {
+  background: #34495e;
+}
+.container div:nth-child(even) {
+  background: #e67e22;
+}
+.container div:hover {
+  flex-grow: 4;
+}
+.container .one:hover h1, .container .two:hover h1, .container .three:hover h1, .container .four:hover h1 {
+  display: block;
+  opacity: 1;
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
